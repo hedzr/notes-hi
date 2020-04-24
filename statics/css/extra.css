@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@0;1&family=Titillium+Web:ital,wght@0,200;0,400;0,700;1,400&family=Trocchi&display=swap');
+/*
+font-family: 'Trocchi', serif;
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Titillium Web', sans-serif;
+ */
+
+.md-typeset h1,h2,h3,h4,h5,h6 {
+	font-family: 'Trocchi', Helvetica,Arial,sans-serif
+}
+
+.md-typeset code, pre>code {
+	font-family: 'Anonymous Pro', monospace;
+}
+
