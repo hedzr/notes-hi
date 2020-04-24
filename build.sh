@@ -63,6 +63,9 @@ init_gh_pages_branch(){
 }
 
 push_gh_pages_branch(){
+	cd site/ && \
+	git add . && git commit -m 'publish the pages' && \
+	cd .. && \
 	git subtree push --prefix=site origin gh-pages
 }
 
