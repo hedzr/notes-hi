@@ -23,13 +23,14 @@ Using command-line:
    cd ..
    git clone git@github.com:yourname/new-repo.git
    cd new-repo
+
    # ./build.sh prepare_gh_pages_branch
-   # git checkout --orphan gh-pages
-   # rm -rf * .gitignore docs site 2>/dev/null
-   # touch README.md && git add README.md && git commit -m 'initial gh-pages commit' && git push origin gh-pages
-   # git checkout master && \
-   # git branch -D gh-pages && \
-   # git subtree add --prefix=site origin gh-pages
+   git checkout --orphan gh-pages
+   rm -rf * .gitignore docs site 2>/dev/null
+   touch README.md && git add README.md && git commit -m 'initial gh-pages commit' && git push origin gh-pages
+   git checkout master && \
+   git branch -D gh-pages && \
+   git subtree add --prefix=site origin gh-pages
    
    #rm -rf site 2>/dev/null
    #git subtree add --prefix=site origin gh-pages
