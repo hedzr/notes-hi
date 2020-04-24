@@ -1,0 +1,93 @@
+# Project Information
+site_name: Notes from Hedzr
+site_description: by hedzr
+site_author: Hedzr Studio Authors
+site_url: https://hedzr.com
+strict: false
+
+# Repository
+repo_name: 'hedzr/notes-hi'
+repo_url: 'https://github.com/hedzr/notes-hi'
+edit_uri: 'https://hedzr.github.io/notes-hi/pre-edit/?ref='
+
+# Copyright
+copyright: 'Copyright &copy; 2019 - 2020 Hedzr Yeh'
+google_analytics:
+#  - 'UA-124463512-x'
+#  - 'auto'
+
+extra_javascript:
+  - statics/javascripts/extra.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+
+extra_css:
+  - 'statics/css/extra.css?v=16'
+
+extra:
+  pagetime: 'on'
+  manifest: 'manifest.webmanifest'
+
+theme:
+  name: material
+  features:
+    - tabs
+  language: zh
+  palette:
+    primary: blue grey
+    accent: brown
+  # font: false
+  # include_search_page: false
+  # search_index_only: true
+  # favicon: 'favicon.ico'
+  # logo:
+  #   icon: 'school'
+  font:
+    text: 'Titillium Web' # apercu, serif,'Fira Sans',serif
+    code: 'Fira Mono'
+
+markdown_extensions:
+  # https://squidfunk.github.io/mkdocs-material/extensions/admonition/
+  - admonition
+  # https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+  - codehilite:
+      guess_lang: false
+  # https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
+  - toc:
+      permalink: true
+  - def_list
+  # https://squidfunk.github.io/mkdocs-material/extensions/footnotes/
+  - footnotes
+  # https://squidfunk.github.io/mkdocs-material/extensions/metadata/
+  - meta
+  # https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+
+
+
+
+
+nav:
+  - Home: index.md
+  - About:
+    - About: about/index.md
+  - Tests:
+    - Test1: tests/test1.md
+    - Test2: tests/test2.md
+

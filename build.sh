@@ -58,7 +58,6 @@ prepare_gh_pages_branch(){
 }
 
 init_gh_pages_branch(){
-
 	git checkout master
 	git subtree add --prefix=site origin gh-pages
 }
