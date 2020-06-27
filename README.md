@@ -1,5 +1,7 @@
 # notes-hi
 
+![CI](https://github.com/hedzr/notes-hi/workflows/CI/badge.svg)
+
 A template repository for building a docs site from markdown docs/notes.
 
 powered by MkDocs.
