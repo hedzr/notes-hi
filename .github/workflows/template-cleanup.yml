@@ -41,9 +41,9 @@ jobs:
           sed -i "s/%GROUP%/$GROUP/g" .github/template-cleanup/*
 
           # Replace template package name in project files with $GROUP
-          find src -type f -exec sed -i "s/org.jetbrains.plugins.template/$GROUP/g" {} +
-          find src -type f -exec sed -i "s/Template/$NAME/g" {} +
-          find src -type f -exec sed -i "s/JetBrains/$ACTOR/g" {} +
+          find docs -type f -exec sed -i "s/org.jetbrains.plugins.template/$GROUP/g" {} +
+          find docs -type f -exec sed -i "s/Template/$NAME/g" {} +
+          find docs -type f -exec sed -i "s/JetBrains/$ACTOR/g" {} +
 
           # Remove lines marked with #REMOVE-ON-CLEANUP#
           find . -type f -exec sed -i '/#REMOVE-ON-CLEANUP#/d' {} +
@@ -51,7 +51,7 @@ jobs:
           # Move content
           mkdir -p src/main/kotlin/${GROUP//.//}
           cp -R .github/template-cleanup/* .
-          cp -R src/main/kotlin/org/jetbrains/plugins/template/* src/main/kotlin/${GROUP//.//}/
+          # cp -R src/main/kotlin/org/jetbrains/plugins/template/* src/main/kotlin/${GROUP//.//}/
 
           # Cleanup
           rm -rf \
@@ -59,7 +59,6 @@ jobs:
             .github/template-cleanup \
             .github/workflows/template-cleanup.yml \
             .idea/icon.png \
-            src/main/kotlin/org \
             CODE_OF_CONDUCT.md \
             LICENSE 2>/dev/null || true
 
