@@ -1,6 +1,6 @@
-# hedzr/notes-hi
+# %REPOSITORY%
 
-![CI](https://github.com/hedzr/notes-hi/workflows/CI/badge.svg)
+![CI](https://github.com/%REPOSITORY%/workflows/CI/badge.svg)
 
 A template repository for building a docs site from markdown docs/notes.
 

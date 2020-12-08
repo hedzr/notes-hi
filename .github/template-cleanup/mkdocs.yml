@@ -1,17 +1,17 @@
 # Project Information
-site_name: Notes for notes-hi
-site_description: by Hedzr
-site_author: Hedzr Studio Authors
+site_name: Notes for %NAME%
+site_description: by %USER%
+site_author: %USER%
 site_url: https://hedzr.com
 strict: false
 
 # Repository
-repo_name: 'hedzr/notes-hi'
-repo_url: 'https://github.com/hedzr/notes-hi'
-edit_uri: 'https://%USER%.github.io/notes-hi/pre-edit/?ref='
+repo_name: '%REPOSITORY%'
+repo_url: 'https://github.com/%REPOSITORY%'
+edit_uri: 'https://%USER%.github.io/%NAME%/pre-edit/?ref='
 
 # Copyright
-copyright: 'Copyright &copy; 2019 - 2021 Hezdr Studio'
+copyright: 'Copyright &copy; 2019 - 2021 %USER%'
 google_analytics:
 #  - 'UA-124463512-x'
 #  - 'auto'
