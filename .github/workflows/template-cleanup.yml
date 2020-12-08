@@ -49,7 +49,7 @@ jobs:
           find . -type f -exec sed -i '/#REMOVE-ON-CLEANUP#/d' {} +
 
           # Move content
-          mkdir -p src/main/kotlin/${GROUP//.//}
+          # mkdir -p src/main/kotlin/${GROUP//.//}
           cp -R .github/template-cleanup/* .
           # cp -R src/main/kotlin/org/jetbrains/plugins/template/* src/main/kotlin/${GROUP//.//}/
 
@@ -69,10 +69,16 @@ jobs:
           git config --local user.name "GitHub Action"
           git add .
           git commit -m "Template cleanup"
+          [ "$(git branch --show-current)" == "main" ] && git checkout master && git merge --no-ff main
 
       # Push changes
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: master
           github_token: ${{ secrets.GITHUB_TOKEN }}
