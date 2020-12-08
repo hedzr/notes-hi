@@ -69,14 +69,9 @@ jobs:
           git config --local user.name "GitHub Action"
           git add .
           git commit -m "Template cleanup"
-          [ "$(git branch --show-current)" == "main" ] && git checkout master && git merge --no-ff main
+          # [ "$(git branch --show-current)" == "main" ] && git checkout master && git merge --no-ff main
 
       # Push changes
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
