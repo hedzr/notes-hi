@@ -1,6 +1,6 @@
-# notes-hi
+# %REPOSITORY%
 
-![CI](https://github.com/hedzr/notes-hi/workflows/CI/badge.svg)
+![CI](https://github.com/%REPOSITORY%/workflows/CI/badge.svg)
 
 A template repository for building a docs site from markdown docs/notes.
 
@@ -8,7 +8,7 @@ powered by MkDocs.
 
 ## fast guide:
 
-1. fork this repo and rename yours.
+1. All you have to do is click the <kbd>Use this template</kbd> button upon this page.
 2. run!
 
 ## Using command-line:
